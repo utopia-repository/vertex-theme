@@ -1,0 +1,25 @@
+#!/usr/bin/make -f
+#export DH_VERBOSE = 1
+
+%:
+	dh $@
+
+PACKAGE_NAME=vertex-gtk-theme
+
+override_dh_auto_install:
+	dh_auto_install
+	./autogen.sh --prefix=$(shell pwd)/debian/$(PACKAGE_NAME)/usr
+	make install
+
+override_dh_auto_clean:
+	dh_auto_clean
+	rm -f Makefile.in common/Makefile.in extra/Makefile.in configure aclocal.m4
+	rm -rf build-aux
+
+PACKAGE = $(shell dpkg-parsechangelog --show-field=Source)
+VERSION = $(shell dpkg-parsechangelog --show-field=Version)
+ORIG_VERSION = $(shell echo $(VERSION) | cut -f 1 -d '-')
+COMMIT = $(shell echo $(ORIG_VERSION) | cut -f 2 -d '~')
+
+get-orig-source:
+	git archive -v $(COMMIT) -o ../$(PACKAGE)_$(ORIG_VERSION).orig.tar.gz

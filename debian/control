@@ -1,0 +1,26 @@
+Source: vertex-theme
+Section: x11
+Priority: optional
+Maintainer: James Lu <bitflip3@gmail.com>
+Build-Depends: debhelper (>= 9),
+ libgtk-3-dev (>= 3.10),
+ autoconf,
+ automake,
+ pkg-config
+Standards-Version: 3.9.8
+Homepage: https://github.com/horst3180/vertex-theme
+Vcs-Git: https://github.com/utopia-repository/vertex-theme
+Vcs-Browser: https://github.com/utopia-repository/vertex-theme
+
+Package: vertex-gtk-theme
+Architecture: all
+Depends: ${misc:Depends},
+ gnome-themes-standard,
+ gtk2-engines-murrine,
+ libgtk-3-0 (>= 3.10~)
+Recommends: vertex-icon-theme
+Description: Vertex theme for GTK 3, GTK 2, Gnome-Shell and Cinnamon
+ Vertex is a theme for GTK 3, GTK 2, Gnome-Shell and Cinnamon.
+ .
+ This package installs three variants to choose from: the default with dark
+ header-bars, a light variant, and a dark variant.
