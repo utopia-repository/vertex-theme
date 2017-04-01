@@ -361,7 +361,7 @@ entry, .primary-toolbar toolbar entry {
   to {
     background-image: -gtk-gradient(radial, center center, 0, center center, 0.5, to(#4080fb), to(transparent)); } }
 
-button {
+button, .primary-toolbar toolbar button {
   min-height: 20px;
   min-width: 20px;
   transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
@@ -396,13 +396,13 @@ button {
       button.flat:hover:active, button.sidebar-button:hover:active {
         transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
         transition-duration: 50ms; }
-  button:focus {
+  button:focus, .primary-toolbar toolbar button:focus {
     border-image: -gtk-scaled(url("borders/button-focused-border.png"), url("borders/button-focused-border@2.png")) 3 3 4 3/3px 3px 4px 3px stretch;
     border-radius: 2px;
     border-width: 1px 1px 2px 1px;
     border-style: solid;
     border-color: transparent; }
-  button:hover {
+  button:hover, .primary-toolbar toolbar button:hover {
     color: #3c3c3e;
     outline-color: rgba(60, 60, 62, 0.3);
     background-image: linear-gradient(to bottom, #ffffff, #e5e5e5);
@@ -414,7 +414,7 @@ button {
     border-style: solid;
     border-color: transparent;
     -gtk-icon-effect: highlight; }
-  button:active, button:checked {
+  button:active, button:checked, .primary-toolbar toolbar button:active, .primary-toolbar toolbar button:checked {
     color: #ffffff;
     outline-color: rgba(255, 255, 255, 0.3);
     background-image: linear-gradient(to bottom, #6a6a6c, #949596);
@@ -435,7 +435,7 @@ button {
     box-shadow: none;
     text-shadow: none;
     -gtk-icon-shadow: none; }
-  button:disabled {
+  button:disabled, .primary-toolbar toolbar button:disabled {
     color: #ababad;
     background-image: linear-gradient(to bottom, #f4f4f4, #f4f4f4);
     text-shadow: none;
@@ -447,7 +447,7 @@ button {
     border-color: transparent; }
     button:disabled > label, button:disabled label {
       color: inherit; }
-    button:disabled:active, button:disabled:checked {
+    button:disabled:active, button:disabled:checked, .primary-toolbar toolbar button:disabled:active, .primary-toolbar toolbar button:disabled:checked {
       color: rgba(255, 255, 255, 0.7);
       background-image: linear-gradient(to bottom, #a5a5a7, #b4b4b6);
       text-shadow: none;
