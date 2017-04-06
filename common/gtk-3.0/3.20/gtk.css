@@ -1501,7 +1501,7 @@ window.csd > .titlebar:not(headerbar) {
     box-shadow: none;
     text-shadow: none;
     -gtk-icon-shadow: none;
-    text-shadow: 0 -1px rgba(0, 0, 0, 0.7);
+    text-shadow: none;
     -gtk-icon-shadow: 0 -1px rgba(0, 0, 0, 0.7); }
   .primary-toolbar button:focus, headerbar button:focus, .titlebar:not(headerbar) button:focus, .budgie-panel button:focus, .raven button:focus, .drop-shadow button:focus, .budgie-session-dialog.background button:focus, .background.budgie-polkit-dialog button:focus, .background.budgie-run-dialog button:focus {
     border-image: -gtk-scaled(url("borders/button-focused-border-dark.png"), url("borders/button-focused-border-dark@2.png")) 3 3 4 3/3px 3px 4px 3px stretch;
