@@ -1,3 +1,9 @@
+vertex-theme (20170128-0utopia1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- James Lu <bitflip3@gmail.com>  Wed, 12 Apr 2017 17:20:33 -0700
+
 vertex-theme (20160329+git11~60a868e-0utopia1) unstable; urgency=medium
 
   * Initial Utopia Repository upload.
