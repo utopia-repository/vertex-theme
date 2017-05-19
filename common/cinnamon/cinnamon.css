@@ -1626,8 +1626,9 @@ StScrollBar StButton#vhandle:active {
 /* Controls the styling when using the "Simple buttons" option */
 .workspace-switcher {
   padding-left: 3px;
-  padding-right: 3px;
-}
+  padding-right: 3px; }
+  .panel-left .workspace-switcher, .panel-right .workspace-switcher {
+    padding: 0; }
 
 /* Controls the style when using the "Visual representation" option */
 .workspace-graph {
@@ -1677,6 +1678,29 @@ StScrollBar StButton#vhandle:active {
 #panel-launchers-box {
   padding-left: 7px;
 }
+
+.panel-launchers {
+  padding-left: 7px;
+  spacing: 2px; }
+  .panel-launchers .launcher {
+    padding-left: 2px;
+    padding-right: 2px;
+    transition-duration: 200; }
+    .panel-launchers .launcher:hover {
+      background-gradient-direction: vertical;
+      background-gradient-start: rgba(255,255,255,0.0);
+      background-gradient-end: rgba(255,255,255,0.2);
+      border: 0px solid rgba(255,255,255,0.5);
+      border-bottom-width: 1px; }
+  .panel-launchers.vertical {
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 0px;
+    padding-right: 0px;
+    spacing: 1px; }
+    .panel-launchers.vertical .launcher {
+      padding-top: 2px;
+      padding-bottom: 2px; }
 
 .panel-launcher {
   margin: 1px;
