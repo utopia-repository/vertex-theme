@@ -17,7 +17,7 @@
    viewBox="0 0 23 23"
    enable-background="new 0 0 23 23"
    xml:space="preserve"
-   sodipodi:docname="panel-right.svg"
+   sodipodi:docname="panel-left.svg"
    inkscape:version="0.92.1 r"><metadata
      id="metadata8"><rdf:RDF><cc:Work
          rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
@@ -45,7 +45,7 @@
      id="image0"
      width="23"
      height="23"
-     x="0"
-     y="-23"
+     x="-1.4083438e-15"
+     y="-8.6236188e-32"
      xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAAXEAYAAACwugjjAAAABGdBTUEAALGPC/xhBQAAACBjSFJN AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAABmJLR0QAAAAAAAD5Q7t/AAAA CXBIWXMAAABaAAAAWgBwI7h9AAAAB3RJTUUH4QQGCx0BRRko8AAAAMhJREFUWMPl1iEOwlAQBND5 pKJ1CMAhSwJJJSfAIeFiILlEDQmyB+AKyG1agaIKzB8EJ+iayQ9j1r5MRmxY3df1Ztn3SCzZcB3K V0GqIaPhAC02aoYDTgNCqWY44ADbZBtHmo3jFGo1wwGn8Ri3aoYDDvCCs5rhgNOw50HNGJ8wK+af xa7r1JCxyaKhilM1wwEHYoObmuGA00LJSs1wwIHYMM3GmcenmuGAA3iEt5rhgNNoNDXDAQeYpwif qAF/B0924+F30vtVvpmgRqJzBtpWAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDE3LTA0LTA2VDExOjI5 OjAxKzAwOjAw586kxQAAACV0RVh0ZGF0ZTptb2RpZnkAMjAxNy0wNC0wNlQxMToyOTowMSswMDow MJaTHHkAAAB+dEVYdHN2ZzpiYXNlLXVyaQBmaWxlOi8vL2J1aWxkL3ZlcnRleC1tYWlhLXRoZW1l cy9wa2cvdmVydGV4LW1haWEtdGhlbWVzL3Vzci9zaGFyZS90aGVtZXMvVmVydGV4LU1haWEvY2lu bmFtb24vcGFuZWwvcGFuZWwtdG9wLnN2Z0W45VYAAAAASUVORK5CYII="
-     transform="rotate(90)" /></svg>
+     transform="matrix(0,1,1,0,0,0)" /></svg>
