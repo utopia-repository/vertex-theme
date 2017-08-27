@@ -2621,6 +2621,7 @@ row:selected check:checked:disabled {
 .osd check:checked:disabled {
   -gtk-icon-source: -gtk-scaled(url("assets/checkbox-checked-insensitive-dark.png"), url("assets/checkbox-checked-insensitive-dark@2.png")); }
 
+.radio,
 radio,
 treeview.radio {
   -gtk-icon-source: -gtk-scaled(url("assets/radio-unchecked-dark.png"), url("assets/radio-unchecked-dark@2.png"));
@@ -2638,6 +2639,7 @@ row:selected radio {
 .osd radio {
   -gtk-icon-source: -gtk-scaled(url("assets/radio-unchecked-dark.png"), url("assets/radio-unchecked-dark@2.png")); }
 
+.radio:disabled,
 radio:disabled,
 treeview.radio:disabled {
   -gtk-icon-source: -gtk-scaled(url("assets/radio-unchecked-insensitive-dark.png"), url("assets/radio-unchecked-insensitive-dark@2.png"));
@@ -2655,6 +2657,7 @@ row:selected radio:disabled {
 .osd radio:disabled {
   -gtk-icon-source: -gtk-scaled(url("assets/radio-unchecked-insensitive-dark.png"), url("assets/radio-unchecked-insensitive-dark@2.png")); }
 
+.radio:indeterminate,
 radio:indeterminate,
 treeview.radio:indeterminate {
   -gtk-icon-source: -gtk-scaled(url("assets/radio-mixed-dark.png"), url("assets/radio-mixed-dark@2.png"));
@@ -2672,6 +2675,7 @@ row:selected radio:indeterminate {
 .osd radio:indeterminate {
   -gtk-icon-source: -gtk-scaled(url("assets/radio-mixed-dark.png"), url("assets/radio-mixed-dark@2.png")); }
 
+.radio:indeterminate:disabled,
 radio:indeterminate:disabled,
 treeview.radio:indeterminate:disabled {
   -gtk-icon-source: -gtk-scaled(url("assets/radio-mixed-insensitive-dark.png"), url("assets/radio-mixed-insensitive-dark@2.png"));
@@ -2689,6 +2693,7 @@ row:selected radio:indeterminate:disabled {
 .osd radio:indeterminate:disabled {
   -gtk-icon-source: -gtk-scaled(url("assets/radio-mixed-insensitive-dark.png"), url("assets/radio-mixed-insensitive-dark@2.png")); }
 
+.radio:checked,
 radio:checked,
 treeview.radio:checked {
   -gtk-icon-source: -gtk-scaled(url("assets/radio-checked-dark.png"), url("assets/radio-checked-dark@2.png"));
@@ -2706,6 +2711,7 @@ row:selected radio:checked {
 .osd radio:checked {
   -gtk-icon-source: -gtk-scaled(url("assets/radio-checked-dark.png"), url("assets/radio-checked-dark@2.png")); }
 
+.radio:checked:disabled,
 radio:checked:disabled,
 treeview.radio:checked:disabled {
   -gtk-icon-source: -gtk-scaled(url("assets/radio-checked-insensitive-dark.png"), url("assets/radio-checked-insensitive-dark@2.png"));
@@ -2741,6 +2747,7 @@ checkbutton label:not(:only-child):first-child, radiobutton label:not(:only-chil
 checkbutton label:not(:only-child):last-child, radiobutton label:not(:only-child):last-child {
   margin-right: 4px; }
 
+.radio,
 radio,
 check {
   min-width: 16px;
