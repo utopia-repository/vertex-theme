@@ -4295,6 +4295,8 @@ ClockBox {
 .xfce4-panel.panel {
   background-color: #3C3E40; }
   .xfce4-panel.panel button.flat, .xfce4-panel.panel button.sidebar-button {
+    color: #F3F3F5;
+    padding-top: 2px;
     background-color: rgba(60, 62, 64, 0);
     border-radius: 0;
     text-shadow: 0 -1px rgba(0, 0, 0, 0.7);
@@ -4303,14 +4305,11 @@ ClockBox {
       color: #F3F3F5;
       outline-color: rgba(243, 243, 245, 0.3);
       background-image: linear-gradient(to bottom, #5e6064, #393A3B);
-      text-shadow: 0 -1px rgba(0, 0, 0, 0.7);
-      -gtk-icon-shadow: 0 -1px rgba(0, 0, 0, 0.7);
       border-image: -gtk-scaled(url("borders/button-normal-border-dark.png"), url("borders/button-normal-border-dark@2.png")) 2 2 3 2/2px 2px 3px 2px stretch;
       border-radius: 2px;
       border-width: 1px 1px 2px 1px;
       border-style: solid;
-      border-color: transparent;
-      border-radius: 0; }
+      border-color: transparent; }
     .xfce4-panel.panel button.flat:active, .xfce4-panel.panel button.sidebar-button:active, .xfce4-panel.panel button.flat:checked, .xfce4-panel.panel button.sidebar-button:checked {
       color: #ffffff;
       outline-color: rgba(255, 255, 255, 0.3);
@@ -4322,8 +4321,7 @@ ClockBox {
       border-radius: 2px;
       border-width: 1px 1px 2px 1px;
       border-style: solid;
-      border-color: transparent;
-      border-radius: 0; }
+      border-color: transparent; }
 
 .nautilus-window .floating-bar {
   padding: 0;
