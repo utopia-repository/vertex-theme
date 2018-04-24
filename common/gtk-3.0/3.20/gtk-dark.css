@@ -4313,6 +4313,8 @@ ClockBox {
       border-style: solid;
       border-color: transparent;
       border-radius: 0; }
+#whiskermenu-button {
+	padding-top: 2px; }
 
 .nautilus-window .floating-bar {
   padding: 0;
