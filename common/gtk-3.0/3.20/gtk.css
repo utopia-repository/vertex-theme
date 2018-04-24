@@ -4329,6 +4329,10 @@ ClockBox {
       border-radius: 0; }
 #xfce4-power-manager-plugin {
   color: #f3f3f5; }
+#whiskermenu-button { 
+	color: #ffffff;
+	padding-top: 2px;
+}
 
 .nautilus-window .floating-bar {
   padding: 0;
