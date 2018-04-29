@@ -5,7 +5,8 @@
 $tab_asset_suffix: if($darker=='false', $asset_suffix, -darker);
 
 .nautilus-window notebook,
-.gedit-bottom-panel-paned notebook {
+.gedit-bottom-panel-paned notebook,
+.nemo-window notebook {
 
   > header.top {
 
