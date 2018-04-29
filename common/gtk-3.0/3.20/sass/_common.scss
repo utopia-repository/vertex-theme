@@ -196,7 +196,7 @@ spinner {
 //
 // Text Entries
 //
-entry {
+entry, %entry {
   min-height: 20px;
   padding: 2px 8px;
   transition: all 200ms $ease-out-quad;
@@ -338,7 +338,7 @@ $_dot_color: if($variant=='light', $selected_bg_color,
   }
 }
 
-button {
+button, %button {
   $_button_transition: all 200ms $ease-out-quad;
 
   min-height: 20px;
@@ -565,8 +565,9 @@ button {
 
 // all the following is for the +|- buttons on inline toolbars, that way
 // should really be deprecated...
-.inline-toolbar toolbutton > button {     // redefining the button look is
-                                          // needed since those are flat...
+.inline-toolbar toolbutton > button,
+.primary-toolbar toolbar toolbutton > button {     // redefining the button look is
+                                                   // needed since those are flat...
   @include button(normal);
   &:hover { @include button(hover); }
   &:active,
@@ -922,7 +923,7 @@ toolbar {
 .primary-toolbar {
   -GtkWidget-window-dragging: true;
   padding: 4px;
-  color: $wm_title;
+  color: $text_color;
   background-image: linear-gradient(to bottom,
                                     $primary_toolbar_bg_a,
                                     $primary_toolbar_bg_b);
@@ -1491,8 +1492,12 @@ headerbar {
   }
 }
 
-.primary-toolbar button,                             // tango icons don't need shadows
+.primary-toolbar button,                                  // tango icons don't need shadows
 .primary-toolbar button.flat { -gtk-icon-shadow: none; }  // defined here so it doesn't get overriden
+.primary-toolbar button.flat { text-shadow: none; }
+.primary-toolbar toolbar button { @extend %button; }
+.primary-toolbar toolbar entry { @extend %entry; }
+.primary-toolbar toolbar { margin: -5px; }
 
 //
 // Pathbars

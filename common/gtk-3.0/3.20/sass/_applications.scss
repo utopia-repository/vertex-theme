@@ -105,12 +105,16 @@ $disk_space_free: darken($bg_color, 3%);
 }
 
 .nemo-places-sidebar {
-	border: none;
-	-gtk-icon-style: regular;
+  border: none;
+  -gtk-icon-style: regular;
 }
 
 .nemo-window .path-bar {
-	-gtk-icon-style: regular;
+  -gtk-icon-style: regular;
+}
+
+.nemo-window .entry {
+  transition: none;
 }
 
 //
@@ -495,13 +499,18 @@ ClockBox {
   button.flat {
     background-color: transparentize(#3C3E40, 1);
     border-radius: 0;
+    color: #F3F3F5;
 
     text-shadow: 0 -1px nth($_light_text_icon_shadow, 2);
     -gtk-icon-shadow: 0 -1px nth($_light_text_icon_shadow, 2);
 
-    &:hover { @include button(hover, $dark:'true'); border-radius: 0;}
-    &:active, &:checked { @include button(active, $dark:'true'); border-radius: 0; }
+    &:hover { @include button(hover, $dark:'true'); }
+    &:active, &:checked { @include button(active, $dark:'true'); }
   }
+}
+
+#whiskermenu-button {
+  padding-top: 2px;
 }
 
 //
