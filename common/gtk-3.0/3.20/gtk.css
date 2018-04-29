@@ -4026,6 +4026,10 @@ NemoWindow EelEditableLabel.entry {
 .nemo-window .path-bar {
   -gtk-icon-style: regular; }
 
+.cs-header {
+  border-bottom: 1px solid #b9b9b9;
+  padding: 4px 8px; }
+
 .open-document-selector-treeview.view, iconview.open-document-selector-treeview {
   padding: 3px 6px 3px 6px;
   border-color: #ffffff; }

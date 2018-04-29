@@ -114,6 +114,15 @@ $disk_space_free: darken($bg_color, 3%);
 }
 
 //
+// Cinnamon Settings
+//
+
+.cs-header {
+  border-bottom: 1px solid $borders_color;
+  padding: 4px 8px;
+}
+
+//
 // Gedit
 //
 .open-document-selector-treeview.view {
