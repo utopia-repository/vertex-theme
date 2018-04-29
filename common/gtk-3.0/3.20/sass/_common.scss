@@ -1718,6 +1718,7 @@ menu,
     border-width: 1px 0 1px 0;
     text-shadow: none;
     -gtk-icon-shadow: none;
+     -gtk-icon-style: regular;
 
     &:hover { @extend %selected_gradient; }
     &:disabled { color: $insensitive_fg_color; }

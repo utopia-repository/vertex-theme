@@ -2087,7 +2087,8 @@ menu,
     border: solid transparent;
     border-width: 1px 0 1px 0;
     text-shadow: none;
-    -gtk-icon-shadow: none; }
+    -gtk-icon-shadow: none;
+    -gtk-icon-style: regular; }
     menu menuitem:disabled,
     .menu menuitem:disabled {
       color: #949597; }
@@ -4004,6 +4005,13 @@ NemoWindow EelEditableLabel.entry {
   color: #ffffff;
   background-color: #4080fb; }
 
+.nemo-places-sidebar {
+  border: none;
+  -gtk-icon-style: regular; }
+
+.nemo-window .path-bar {
+  -gtk-icon-style: regular; }
+
 .open-document-selector-treeview.view, iconview.open-document-selector-treeview {
   padding: 3px 6px 3px 6px;
   border-color: #2B2B2C; }
@@ -4918,16 +4926,20 @@ popover.places-menu {
   border-top: 1px solid #171819; }
 
 .nautilus-window notebook > header.top,
-.gedit-bottom-panel-paned notebook > header.top {
+.gedit-bottom-panel-paned notebook > header.top,
+.nemo-window notebook > header.top {
   background-color: #2a2a2b;
   border-bottom-width: 0px;
   box-shadow: inset 0 5px rgba(0, 0, 0, 0.01), inset 0 4px rgba(0, 0, 0, 0.015), inset 0 3px rgba(0, 0, 0, 0.02), inset 0 2px rgba(0, 0, 0, 0.025), inset 0 1px rgba(0, 0, 0, 0.03), inset 0 -1px rgba(23, 24, 25, 0.5); }
   .nautilus-window notebook > header.top > tabs > tab, .nautilus-window notebook > header.top > tabs > tab:hover,
   .gedit-bottom-panel-paned notebook > header.top > tabs > tab,
-  .gedit-bottom-panel-paned notebook > header.top > tabs > tab:hover {
+  .gedit-bottom-panel-paned notebook > header.top > tabs > tab:hover,
+  .nemo-window notebook > header.top > tabs > tab,
+  .nemo-window notebook > header.top > tabs > tab:hover {
     border-image: linear-gradient(to bottom, #171819 0px, #1f1f20 1px, rgba(23, 24, 25, 0.2)) 0 1 0 1; }
   .nautilus-window notebook > header.top > tabs > tab:checked,
-  .gedit-bottom-panel-paned notebook > header.top > tabs > tab:checked {
+  .gedit-bottom-panel-paned notebook > header.top > tabs > tab:checked,
+  .nemo-window notebook > header.top > tabs > tab:checked {
     margin-left: -4px;
     margin-right: -5px;
     background-color: transparent;
@@ -4946,18 +4958,27 @@ popover.places-menu {
     .gedit-bottom-panel-paned notebook > header.top > tabs > tab:checked button.flat,
     .gedit-bottom-panel-paned notebook > header.top > tabs > tab:checked button.sidebar-button,
     .gedit-bottom-panel-paned notebook > header.top > tabs > tab:checked button.flat:not(:hover):not(:active),
-    .gedit-bottom-panel-paned notebook > header.top > tabs > tab:checked button.sidebar-button:not(:hover):not(:active) {
+    .gedit-bottom-panel-paned notebook > header.top > tabs > tab:checked button.sidebar-button:not(:hover):not(:active),
+    .nemo-window notebook > header.top > tabs > tab:checked label,
+    .nemo-window notebook > header.top > tabs > tab:checked button.flat,
+    .nemo-window notebook > header.top > tabs > tab:checked button.sidebar-button,
+    .nemo-window notebook > header.top > tabs > tab:checked button.flat:not(:hover):not(:active),
+    .nemo-window notebook > header.top > tabs > tab:checked button.sidebar-button:not(:hover):not(:active) {
       color: #F3F3F5;
       text-shadow: 0 -1px rgba(0, 0, 0, 0.8);
       -gtk-icon-shadow: 0 -1px rgba(0, 0, 0, 0.8); }
     .nautilus-window notebook > header.top > tabs > tab:checked button.flat:hover, .nautilus-window notebook > header.top > tabs > tab:checked button.sidebar-button:hover,
     .gedit-bottom-panel-paned notebook > header.top > tabs > tab:checked button.flat:hover,
-    .gedit-bottom-panel-paned notebook > header.top > tabs > tab:checked button.sidebar-button:hover {
+    .gedit-bottom-panel-paned notebook > header.top > tabs > tab:checked button.sidebar-button:hover,
+    .nemo-window notebook > header.top > tabs > tab:checked button.flat:hover,
+    .nemo-window notebook > header.top > tabs > tab:checked button.sidebar-button:hover {
       color: #ff3333;
       border: 1px solid rgba(255, 255, 255, 0.1); }
     .nautilus-window notebook > header.top > tabs > tab:checked button.flat:active, .nautilus-window notebook > header.top > tabs > tab:checked button.sidebar-button:active,
     .gedit-bottom-panel-paned notebook > header.top > tabs > tab:checked button.flat:active,
-    .gedit-bottom-panel-paned notebook > header.top > tabs > tab:checked button.sidebar-button:active {
+    .gedit-bottom-panel-paned notebook > header.top > tabs > tab:checked button.sidebar-button:active,
+    .nemo-window notebook > header.top > tabs > tab:checked button.flat:active,
+    .nemo-window notebook > header.top > tabs > tab:checked button.sidebar-button:active {
       color: #F3F3F5;
       border: 1px solid #171819;
       background-image: linear-gradient(to bottom, #1c1d1e, #29292b); }
