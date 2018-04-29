@@ -2087,7 +2087,8 @@ menu,
     border: solid transparent;
     border-width: 1px 0 1px 0;
     text-shadow: none;
-    -gtk-icon-shadow: none; }
+    -gtk-icon-shadow: none;
+    -gtk-icon-style: regular; }
     menu menuitem:disabled,
     .menu menuitem:disabled {
       color: #949597; }
@@ -4003,6 +4004,13 @@ NemoWindow EelEditableLabel.entry {
 .conflict-row.activatable:selected {
   color: #ffffff;
   background-color: #4080fb; }
+
+.nemo-places-sidebar {
+  border: none;
+  -gtk-icon-style: regular; }
+
+.nemo-window .path-bar {
+  -gtk-icon-style: regular; }
 
 .open-document-selector-treeview.view, iconview.open-document-selector-treeview {
   padding: 3px 6px 3px 6px;

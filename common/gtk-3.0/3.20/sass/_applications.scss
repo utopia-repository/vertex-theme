@@ -104,6 +104,15 @@ $disk_space_free: darken($bg_color, 3%);
   @extend .nautilus-desktop.nautilus-canvas-item;
 }
 
+.nemo-places-sidebar {
+	border: none;
+	-gtk-icon-style: regular;
+}
+
+.nemo-window .path-bar {
+	-gtk-icon-style: regular;
+}
+
 //
 // Gedit
 //
