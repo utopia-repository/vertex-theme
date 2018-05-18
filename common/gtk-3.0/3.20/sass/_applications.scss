@@ -109,12 +109,17 @@ $disk_space_free: darken($bg_color, 3%);
   -gtk-icon-style: regular;
 }
 
-.nemo-window .path-bar {
-  -gtk-icon-style: regular;
-}
+.nemo-window {
+  .path-bar {
+    -gtk-icon-style: regular;
+  }
 
-.nemo-window .entry {
-  transition: none;
+  .nemo-window-pane widget.entry {
+    transition: none;
+    @include entry(focus);
+
+    &:selected { @extend %selected_items; }
+  }
 }
 
 //
