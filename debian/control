@@ -8,7 +8,7 @@ Build-Depends: debhelper (>= 9),
  automake,
  pkg-config
 Standards-Version: 3.9.8
-Homepage: https://github.com/horst3180/vertex-theme
+Homepage: https://github.com/oberon-manjaro/vertex-theme
 Vcs-Git: https://github.com/utopia-repository/vertex-theme
 Vcs-Browser: https://github.com/utopia-repository/vertex-theme
 
