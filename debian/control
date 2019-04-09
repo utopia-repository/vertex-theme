@@ -1,13 +1,13 @@
 Source: vertex-theme
 Section: x11
 Priority: optional
-Maintainer: James Lu <bitflip3@gmail.com>
-Build-Depends: debhelper (>= 9),
+Maintainer: James Lu <james@overdrivenetworks.com>
+Build-Depends: debhelper (>= 11~),
  libgtk-3-dev (>= 3.10),
  autoconf,
  automake,
  pkg-config
-Standards-Version: 3.9.8
+Standards-Version: 4.3.0
 Homepage: https://github.com/oberon-manjaro/vertex-theme
 Vcs-Git: https://github.com/utopia-repository/vertex-theme
 Vcs-Browser: https://github.com/utopia-repository/vertex-theme

@@ -2,6 +2,11 @@ vertex-theme (20180519-0utopia1) UNRELEASED; urgency=medium
 
   * New upstream release from maintained fork:
     https://github.com/oberon-manjaro/vertex-theme
+  * Packaging updates:
+    - Bump to debhelper 11.
+    - Standards-Version => 4.3.0; drop obsolete get-orig-source rule from
+      debian/rules
+    - Update copyright years & email
 
  -- James Lu <james@overdrivenetworks.com>  Tue, 09 Apr 2019 00:18:08 -0700
 
