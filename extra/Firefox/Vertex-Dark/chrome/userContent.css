@@ -9,7 +9,6 @@ select {
   border-radius: 2px;
   background-color: white;
   color: #333333;
-  -moz-appearance: none;
 }
 /*
 input[type="radio"],
@@ -35,7 +34,6 @@ input[type="checkbox"] {
   border-radius: 2px;
   background-color: #eeeeee;
   color: #333333;
-  -moz-appearance: none;
 }
 /*
 body {
@@ -96,7 +94,7 @@ margin: 8px;
 @-moz-document url("about:newtab") {
 
   :root {
-    background-color: #2b2b2c !important;
+    background-color: white !important;
   }
 
   /* SCROLLBOX */
@@ -215,7 +213,7 @@ margin: 8px;
 
   .newtab-customize-panel-item > label,
   .newtab-search-panel-engine > label {
-    color: #F3F3F5 !important;
+    color: black !important;
   }
 
   .searchSuggestionTable {
@@ -240,12 +238,12 @@ margin: 8px;
 
 /*Fix unreadable treeview text*/
 xul|treechildren::-moz-tree-cell-text {
-  color: #F3F3F5 !important;
+  color: black !important;
 }
 
 
 /*Make about:config list readable*/
 #configTreeBody::-moz-tree-cell-text() {
-  color: white !important;
+  color: black !important;
 }
 
