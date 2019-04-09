@@ -4,14 +4,10 @@
 %:
 	dh $@
 
-PACKAGE_NAME=vertex-gtk-theme
-
-override_dh_auto_install:
-	dh_auto_install
-	./autogen.sh --prefix=$(shell pwd)/debian/$(PACKAGE_NAME)/usr
-	make install
-
 override_dh_auto_clean:
 	dh_auto_clean
 	rm -f Makefile.in common/Makefile.in extra/Makefile.in configure aclocal.m4
 	rm -rf build-aux
+
+override_dh_auto_configure:
+	./configure --with-gnome=3.22 --prefix=/usr
